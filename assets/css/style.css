@@ -1,0 +1,11 @@
+#holidayGifs {
+    background-image: url("/assets/images/wrappingPaper.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#makeSnow {
+    background-image: url("/assets/images/wrappingPaper2.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
