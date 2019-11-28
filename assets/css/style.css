@@ -1,11 +1,33 @@
+body{
+    background-color: lightskyblue;
+}
+
+@keyframes blink { 
+    50% { border-color: #ff0000; } 
+ }
+
 #holidayGifs {
+    animation: blink .5s step-end infinite alternate;
     background-image: url("/assets/images/wrappingPaper.jpg");
     background-repeat: no-repeat;
     background-size: auto;
 }
 
-#makeSnow {
-    background-image: url("/assets/images/wrappingPaper2.png");
+#holidayCharacters {
+    animation: blink .5s step-end infinite alternate;
+    background-image: url("/assets/images/wrappingPaper2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.elfCard{
+    background-color: #FFF;
+    display: inline-block;
+    height: auto;
+    width: 200px;
+}
+
+.elfImage{
+    height: 282px;
+    width: 179px;
 }
