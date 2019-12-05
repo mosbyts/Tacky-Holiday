@@ -11,6 +11,7 @@ body{
     background-image: url("/assets/images/wrappingPaper.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+    margin-bottom: 10px;
 }
 
 #holidayCharacters {
@@ -18,16 +19,40 @@ body{
     background-image: url("/assets/images/wrappingPaper2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+    margin-bottom: 10px;
 }
 
 .elfCard{
     background-color: #FFF;
     display: inline-block;
     height: auto;
-    width: 200px;
+    width: 180px;
 }
 
 .elfImage{
     height: 282px;
     width: 179px;
+}
+
+#holidayJokes {
+    animation: blink .5s step-end infinite alternate;
+    background-image: url("/assets/images/wrappingPaper3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #FFF;
+    padding: 5px;
+}
+
+#jokeDisplay {
+    background-color: #FFF;
+    display: inline-block;
+}
+
+#footer {
+    background-color: #FFF;
+    margin-top: 5px;
 }

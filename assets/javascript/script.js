@@ -38,3 +38,23 @@ $(document).ready(function(){
       }
   });
 //<!--GIPHY AJAX CALL END--!>//
+
+//<!--JOKE GENERATOR START--!>//
+  var jokes = ["What do Santa's elves learn in school? The Elfabet!", "What does Santa like to do in the garden? Hoe, hoe, hoe!", "What is Frosty the Snowman's favorite cereal? Snowflakes!", "What type of cars do elves drive? Toy-otas!", "What is a parent's favorite Christmas carol? Silent Night!", ]
+
+  function generateJoke(){
+    for(var i = 0; i < jokes.length; i++){
+      var randomNum = Math.floor(Math.random() * i);
+      console.log(randomNum)
+      var newJoke = jokes[randomNum];
+      console.log(newJoke);
+    };
+    $("#jokeDisplay").append(newJoke)
+  };
+
+  $("#jokeBtn").on("click", function(event){
+    event.preventDefault();
+    $("#jokeDisplay").empty();
+    generateJoke();
+  });
+//<!--JOKE GENERATOR END--!>//
