@@ -2,9 +2,42 @@ body{
     background-color: lightskyblue;
 }
 
-@keyframes blink { 
-    50% { border-color: #ff0000; } 
- }
+ @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF0000, 0 0 20px #FF0000
+      , 0 0 25px #FF0000, 0 0 30px #FF0000, 0 0 35px #FF0000;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #009900, 0 0 20px #009900, 0 0 25px #009900
+      , 0 0 30px #009900, 0 0 35px #009900, 0 0 40px #009900;
+    }
+  }
+
+  .glow {
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+nav{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.btn {
+    background-color: #FFF;
+    padding: 5px;
+}
+
+/* HOLIDAY GIF DIV START */
+#holidayGifsH2{
+    color: green;
+}
 
 #holidayGifs {
     animation: blink .5s step-end infinite alternate;
@@ -12,26 +45,16 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%
 }
+/* HOLIDAY GIF DIV END */
 
-#holidayCharacters {
-    animation: blink .5s step-end infinite alternate;
-    background-image: url("/assets/images/wrappingPaper2.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-bottom: 10px;
-}
-
-.elfCard{
-    background-color: #FFF;
-    display: inline-block;
-    height: auto;
-    width: 180px;
-}
-
-.elfImage{
-    height: 282px;
-    width: 179px;
+/* HOLIDAY JOKE DIV START */
+#holidayJokesH2{
+    color: #FFF;
 }
 
 #holidayJokes {
@@ -40,19 +63,64 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 10px;
-}
-
-.btn {
-    background-color: #FFF;
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
 #jokeDisplay {
     background-color: #FFF;
+    border-radius: 25px;
     display: inline-block;
+    padding: 5px;
+}
+/* HOLIDAY JOKE DIV END */
+
+/* ELF HALL OF FAME DIV START */
+#holidayCharacters {
+    animation: blink .5s step-end infinite alternate;
+    background-image: url("/assets/images/wrappingPaper2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.elfCard{
+    background-color: #FFF;
+    box-shadow: 10px 10px 5px grey;
+    display: inline-block;
+    height: auto;
+    margin: 15px;
+    width: 180px;
+}
+
+.card-title{
+    font-family: 'Mountains of Christmas', cursive;
+
+}
+
+.elfImage{
+    height: 282px;
+    width: 179px;
+}
+/* ELF HALL OF FAME DIV END */
+
+.snowflake{
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    display: inline-block;
+    height: auto;
+    width: 25px;
 }
 
 #footer {
     background-color: #FFF;
-    margin-top: 5px;
+    font-family: 'Mountains of Christmas', cursive;
+    padding: 10px;
+    margin: 0 auto
+}
+
+.footer-block{
+    display: inline-block;
 }

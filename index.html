@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tianna's Tacky Holiday</title>
     <link rel="shortcut icon" href="/assets/images/favicon.ico.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/javascript/snowstorm.js"></script>
+    <script type="text/javascript" src="/assets/js/snowstorm.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Tacky Holiday</span>
+        <h1 class="navbar-brand mb-0 glow">Tianna's Tacky Holiday</h1>
+        <img src="assets/images/snowflake.png" class="snowflake animated pulse">
     </nav>
 
     <div id="holidayGifsContainer" class="container">
-        <div id="row">
-            <div id="col-12">
+        <div class="row">
+            <div class="col-12">
                 <div id="holidayGifs">
-                    <h2>Holiday Gifs</h2>
+                    <h2 id="holidayGifsH2">Holiday Gifs</h2>
                     <form id="search">
                         <input id="searchBar"><button id="searchBtn" class="btn">Search</button>
                     </form>
                  <div id="gifDisplay"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="holidayJokes" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="holidayJokesH2">Holiday Jokes</h2>
+                <button id="jokeBtn" class="btn">Press for a joke</button>
+                    <div id="jokeDisplay"></div>
             </div>
         </div>
     </div>
@@ -35,24 +48,24 @@
                 <h2>Elf Hall of Fame</h2>
                     <div class="card-group">
                         <div class="card elfCard d-inline">
-                            <img src="assets/images/boxBalancingElf.jpg" class="card-img-top elfImage" alt="...">
+                            <img src="assets/images/boxBalancingElf.jpg" class="card-img-top elfImage animated pulse" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">1st Place - Snowflake the Elf</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Snowflake earned first place by being the most helpful elf and learning to carry four gifts at once!</p>
                         </div>
                         </div>
                     <div class="card elfCard d-inline">
                         <img src="assets/images/rippedBagElf.jpg" class="card-img-top elfImage" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">2nd Place - Holly the Elf</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">Holly earned second place because we pity an elf who accidentally breaks everything.</p>
                     </div>
                     </div>
                     <div class="card elfCard d-inline">
                     <img src="assets/images/happyElf.jpg" class="card-img-top elfImage" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">3rd Place - Jack the Elf</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text">Jack earned third place by always having a positive attitude.</p>
                     </div>
                     </div>
                 </div>
@@ -60,24 +73,16 @@
         </div>
     </div>
 
-    <div id="holidayJokes" class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>Holiday Jokes</h2>
-                <button id="jokeBtn" class="btn">Press for a joke</button>
-                    <div id="jokeDisplay"></div>
-            </div>
-        </div>
-    </div>
-
     <div id="footer">
         <div class="container-fluid">
             <div class="col-12">
-                <p class="footer-block">Copyright 2019</p>
+                <img src="assets/images/snowflake.png" class="snowflake animated pulse">
+                <h5 class="footer-block">Copyright 2019</h5>
+                <img src="assets/images/snowflake.png" class="snowflake animated pulse">
             </div>
         </div>
     </div>
 
-    <script src="assets/javascript/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
