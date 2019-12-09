@@ -40,7 +40,9 @@ $(document).ready(function(){
 //<!--GIPHY AJAX CALL END--!>//
 
 //<!--JOKE GENERATOR START--!>//
-  var jokes = ["What do Santa's elves learn in school? The Elfabet!", "What does Santa like to do in the garden? Hoe, hoe, hoe!", "What is Frosty the Snowman's favorite cereal? Snowflakes!", "What type of cars do elves drive? Toy-otas!", "What is a parent's favorite Christmas carol? Silent Night!"]
+  $("#jokeDisplay").hide();
+
+  var jokes = ["What do Santa's elves learn in school? The Elfabet!", "What is Frosty the Snowman's favorite cereal? Snowflakes!", "What type of cars do elves drive? Toy-otas!", "What is a parent's favorite Christmas carol? Silent Night!", "What kind of music do elves like? 'Wrap' Music!", "What do you call a snowman with a six-pack? An abdominal snowman!", "What does the Gingerbread Man use to make his bed? Cookie sheets!"]
 
   function generateJoke(){
     for(var i = 0; i < jokes.length; i++){
@@ -55,6 +57,7 @@ $(document).ready(function(){
   $("#jokeBtn").on("click", function(event){
     event.preventDefault();
     $("#jokeDisplay").empty();
+    $("#jokeDisplay").show();
     generateJoke();
   });
 //<!--JOKE GENERATOR END--!>//

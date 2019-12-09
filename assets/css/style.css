@@ -1,5 +1,6 @@
-body{
-    background-color: lightskyblue;
+HTML, BODY{
+    background-color: #b5cfd3;
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/1point1.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/1point1.gif"), auto;
 }
 
  @-webkit-keyframes glow {
@@ -19,14 +20,15 @@ body{
     animation: glow 3s ease-in-out infinite alternate;
   }
 
-nav{
+.navbar{
     font-family: 'Mountains of Christmas', cursive;
-    font-size: x-large;
+    font-size: 50px;
     text-align: center;
 }
 
 h2{
     font-family: 'Mountains of Christmas', cursive;
+    font-size: 40px;
 }
 
 .btn {
@@ -37,32 +39,31 @@ h2{
 /* HOLIDAY GIF DIV START */
 #holidayGifsH2{
     color: green;
+    font-size: 40px;
 }
 
 #holidayGifs {
-    animation: blink .5s step-end infinite alternate;
     background-image: url("/assets/images/wrappingPaper.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 10px;
     text-align: center;
-    width: 100%
 }
 /* HOLIDAY GIF DIV END */
 
 /* HOLIDAY JOKE DIV START */
 #holidayJokesH2{
     color: #FFF;
+    font-size: 40px;
 }
 
 #holidayJokes {
-    animation: blink .5s step-end infinite alternate;
     background-image: url("/assets/images/wrappingPaper3.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     text-align: center;
 }
@@ -70,18 +71,17 @@ h2{
 #jokeDisplay {
     background-color: #FFF;
     border-radius: 25px;
-    display: inline-block;
+    margin: 10px;
     padding: 5px;
 }
 /* HOLIDAY JOKE DIV END */
 
 /* ELF HALL OF FAME DIV START */
 #holidayCharacters {
-    animation: blink .5s step-end infinite alternate;
     background-image: url("/assets/images/wrappingPaper2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     text-align: center;
 }
@@ -101,8 +101,8 @@ h2{
 }
 
 .elfImage{
-    height: 282px;
-    width: 179px;
+    height: 250px;
+    width: 185px;
 }
 /* ELF HALL OF FAME DIV END */
 
@@ -111,7 +111,7 @@ h2{
     animation-duration: 1s;
     display: inline-block;
     height: auto;
-    width: 25px;
+    width: 35px;
 }
 
 #footer {
