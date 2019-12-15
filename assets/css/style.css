@@ -43,7 +43,7 @@ h2{
 }
 
 #holidayGifs {
-    background-image: url("/assets/images/wrappingPaper.jpg");
+    background-image: url("../images/wrappingPaper.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ h2{
 }
 
 #holidayJokes {
-    background-image: url("/assets/images/wrappingPaper3.jpg");
+    background-image: url("../images/wrappingPaper3.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 20px;
@@ -78,7 +78,7 @@ h2{
 
 /* ELF HALL OF FAME DIV START */
 #holidayCharacters {
-    background-image: url("/assets/images/wrappingPaper2.jpg");
+    background-image: url("../images/wrappingPaper2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 20px;
